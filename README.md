@@ -1,1 +1,8 @@
-# graficos_com_jpgraph
+Integrantes:
+Ana Clara Lopes Brandão  
+Ítalo Guerra de Oliveira Santos
+Jean Michell de Oliveira Moura
+Jonathan Menezes Nóbrega
+Karen Gabrielle Fernandes Rodrigues
+Maria Vitória Jesus do Nascimento
+Wilmondes Gabriel Teixeira Alves
