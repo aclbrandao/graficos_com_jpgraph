@@ -43,9 +43,9 @@
                     <img src="images/imgLogin.png" alt="mdo" width="50" height="50" class="rounded-circle">
                   </a>
                   <ul class="dropdown-menu text-small">
-                    <li><a class="dropdown-item" href="/pages/cadastro.html">Cadastrar-se</a></li>
+                    <li><a class="dropdown-item" href="/vegzone/VegZone/pages/cadastro.php">Cadastrar-se</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="/pages/login.html">Entrar</a></li>
+                    <li><a class="dropdown-item" href="/vegzone/VegZone/pages/login.php">Entrar</a></li>
                   </ul>
                 </div>
                 </div>

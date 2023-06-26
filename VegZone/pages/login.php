@@ -1,3 +1,10 @@
+<?php
+session_start();
+
+include_once "Conecta_Cadastro.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -53,22 +60,50 @@
       </div>
     </div>
   </header>
-        <main class="container-fluid m-0 p-0 bg-white d-flex justify-content-center align-items-center flex-column text-center">
-                <form action="novasenha.html">
-                    <p class="text-success h5 my-2">Informe seu e-mail cadastrado:</p>
-                    <input type="email" placeholder="exemple@exemple.com" class="form-control mt-3 p-2 text-center">
-                    <a href="novasenha.html" class="nav-link"><button type="button" class="btn btn-outline-success my-3">Enviar</a></button>
-                </form>
+      <main class="container-fluid m-0 p-0 bg-white d-flex justify-content-center align-items-center flex-column text-center">
+        <section class="border border-success my-4 w-75">
+        <section class="container-fluid m-0 p-0 text-center pt-4 d-flex justify-content-center align-items-center flex-column bdlogin" style="height: 800px;">
+            <p class="h3 text-success">LOGIN</p>
+            <?php
+            if (isset ($_SESSION['msg'])){
+              echo $_SESSION['msg'];
+              unset ($_SESSION['msg']);
+            }
+            ?>
+            <form action="logincheck.php" method="POST">
+                <label for="ds_email" id="ds_email" class="pt-4" style="font-size: 12px; font-weight: bold;">E-MAIL: <br>
+                <input type="email" name="ds_email" class="form-control text-center" style="width: 350px;" placeholder="Informe seu e-mail cadastrado" required>
+                </label><br><br>
+                <label for="ds_senha" id="ds_senha" style="font-size: 12px; font-weight: bold;">SENHA: <br>
+                <input type="password" name="ds_senha" class="form-control text-center" style="width: 350px;" placeholder="Informe sua senha" required>
+                </label><br>
+            <section>
+                <sub><a href="/pages/esqueceusenha.html">Esqueci minha senha</a></sub>
+            </section><br>
+              <div id="btt" class="my-2 pb-4">
+                <button type="submit" class="btn btn-outline-success">Entrar</button>
+              </div>
+              <section>         
+                <p class="mb-0 pb-0">Não tem conta?</p>
+                  <sub class="mt-0 pt-0"><a href="/vegzone/VegZone/pages/cadastro.php">Cadastre-se aqui!</a></sub>
+              </section><br>
             </form>
-        </main>
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-        </div>    
-        <ul class="nav col-12 justify-content-end list-unstyled d-flex">
-            <span class="mb-3 mb-md-0 pe-3 text-white">© 2023 VegZone, Inc</span>
-        </ul>
-    </footer>
-    </div>
-    <script src="js/bootstrap.bundle.js"></script>
-</body>
-</html>
+        </section>
+                    
+                </div>
+                </div>  
+            </div>
+        </div>
+      </section>
+      </main>
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+          </div>    
+          <ul class="nav col-12 justify-content-end list-unstyled d-flex">
+              <span class="mb-3 mb-md-0 pe-3 text-white">© 2023 VegZone, Inc</span>
+          </ul>
+      </footer>
+      </div>
+      <script src="js/bootstrap.bundle.js"></script>
+  </body>
+  </html>

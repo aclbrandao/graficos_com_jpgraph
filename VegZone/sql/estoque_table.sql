@@ -1,9 +1,12 @@
+USE `login-vegzone`;
+
+
 CREATE TABLE estoque 
 (id INT NOT NULL auto_increment, 
 mes VARCHAR(3) NOT NULL,
 valor INT NOT NULL, 
 PRIMARY KEY (id)
-);
+); ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO estoque (mes, valor) VALUES ('jan', 140);
 
